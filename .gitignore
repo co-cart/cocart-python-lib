@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+__pycache__
+build/
+dist/
+*.egg-info/
+run.py
+run3.py
+.vscode/
