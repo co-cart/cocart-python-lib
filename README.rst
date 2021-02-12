@@ -32,7 +32,7 @@ Setup
 
     from cocart import CoCartAPI
 
-    CoCartAPI = CoCartAPI(
+    CoCart = CoCartAPI(
         url="http://example.com"
     )
 
@@ -113,18 +113,18 @@ Request with `params` example
 
     from cocart import CoCartAPI
 
-    CoCartAPI = CoCartAPI(
+    CoCart = CoCartAPI(
         url="http://example.com"
     )
 
     # Get example.
-    print(CoCartAPI.get("get-cart").json())
+    print(CoCart.get("get-cart").json())
 
     # Force delete example.
-    print(CoCartAPI.delete("item", params={"cart_item_key": "404dcc91b2aeaa7caa47487d1483e48a"}).json())
+    print(CoCart.delete("item", params={"cart_item_key": "404dcc91b2aeaa7caa47487d1483e48a"}).json())
 
     # Query example.
-    print(CoCartAPI.get("products", params={"per_page": 20}).json())
+    print(CoCart.get("products", params={"per_page": 20}).json())
 
 
 Bug Reporting
