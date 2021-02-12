@@ -50,7 +50,7 @@ Options
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``version``           | ``string``  | no       | API version, default is ``cocart/v1``                                                                                                                                               |
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``wp_api``            | `String`    | no       | Custom WP REST API URL prefix, used to support custom prefixes created with the `rest_url_prefix <https://developer.wordpress.org/reference/functions/rest_get_url_prefix/>`_ filter. |
+| ``wp_api``            | `String`    | no       | Custom WP REST API URL prefix, used to support custom prefixes created with the `rest_url_prefix` filter. https://developer.wordpress.org/reference/functions/rest_get_url_prefix/  |
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``timeout``           | ``integer`` | no       | Connection timeout, default is ``5``                                                                                                                                                |
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -139,8 +139,6 @@ Credits
 -------
 
 CoCart is developed and maintained by `Sébastien Dumont <https://github.com/seb86>`_ 
-
----
 
 - https://sebastiendumont.com
 - GitHub: https://github.com/seb86
