@@ -34,10 +34,11 @@ class CoCartAPI(object):
         self.timeout = kwargs.get("timeout", 5)
         self.verify_ssl = kwargs.get("verify_ssl", True)
         self.query_string_auth = kwargs.get("query_string_auth", False)
-        self.userAgent = kwargs.get("user_agent", defaultUserAgent())
+        self.userAgent = kwargs.get("user_agent", self.__defaultUserAgent())
 
-    def defaultUserAgent(self):
-        return f'CoCart API {__version__}'
+    def __defaultUserAgent(self):
+        """ Using default User Agent """
+        return f"CoCart API {__version__}"
 
     def __is_ssl(self):
         """ Check if url use HTTPS """
