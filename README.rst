@@ -1,6 +1,8 @@
 CoCart API - Python Client
 ===============================
 
+> 🍴 Forked from WooCommerce Python Library and modified to support CoCart REST API instead.
+
 A Python wrapper for the CoCart REST API. Easily interact with the CoCart REST API using this library.
 
 .. image:: https://secure.travis-ci.org/co-cart/cocart-python-lib.svg
@@ -9,6 +11,7 @@ A Python wrapper for the CoCart REST API. Easily interact with the CoCart REST A
 .. image:: https://img.shields.io/pypi/v/cocart.svg
     :target: https://pypi.python.org/pypi/CoCart
 
+> ⚠️This library will **NOT** support the **LEGACY API** of CoCart.
 
 Installation
 ------------
@@ -20,7 +23,7 @@ Installation
 Getting started
 ---------------
 
-Check out the CoCart API endpoints and data that can be manipulated in http://cocart.github.io/cocart-rest-api-docs/.
+Check out the CoCart API endpoints and data that can be manipulated in https://docs.cocart.xyz/.
 
 Setup
 -----
@@ -47,7 +50,7 @@ Options
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``version``           | ``string``  | no       | API version, default is ``cocart/v1``                                                                                                                                               |
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``wp_api``            | `String`    | no       | Custom WP REST API URL prefix, used to support custom prefixes created with the [rest_url_prefix](https://developer.wordpress.org/reference/functions/rest_get_url_prefix/) filter. |
+| ``wp_api``            | `String`    | no       | Custom WP REST API URL prefix, used to support custom prefixes created with the `rest_url_prefix <https://developer.wordpress.org/reference/functions/rest_get_url_prefix/>`_ filter. |
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``timeout``           | ``integer`` | no       | Connection timeout, default is ``5``                                                                                                                                                |
 +-----------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -116,7 +119,7 @@ Request with `params` example
     print(CoCartAPI.get("get-cart").json())
 
     # Force delete example.
-    print(CoCartAPI.delete("products/100", params={"force": True}).json())
+    print(CoCartAPI.delete("item", params={"cart_item_key": "404dcc91b2aeaa7caa47487d1483e48a"}).json())
 
     # Query example.
     print(CoCartAPI.get("products", params={"per_page": 20}).json())
@@ -125,24 +128,20 @@ Request with `params` example
 Bug Reporting
 -------------
 
-If you think you have found a bug in the library, please [open a new issue](https://github.com/co-cart/cocart-js-lib/issues/new/choose) and I will do my best to help you out.
+If you think you have found a bug in the library, `please open a new issue <https://github.com/co-cart/cocart-js-lib/issues/new/choose>`_  and I will do my best to help you out.
 
 Changelog
 ---------
 
-[See changelog for details](https://github.com/co-cart/cocart-python-lib/blob/master/CHANGELOG.md)
+`See changelog for details. <https://github.com/co-cart/cocart-python-lib/blob/master/CHANGELOG.md>`_ 
 
 Credits
 -------
 
-CoCart is developed and maintained by [Sébastien Dumont](https://github.com/seb86).
+CoCart is developed and maintained by `Sébastien Dumont <https://github.com/seb86>`_ 
 
 ---
 
-[sebastiendumont.com](https://sebastiendumont.com) &nbsp;&middot;&nbsp;
-GitHub [@seb86](https://github.com/seb86) &nbsp;&middot;&nbsp;
-Twitter [@sebd86](https://twitter.com/sebd86)
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/seb86/my-open-source-readme-template/master/a-sebastien-dumont-production.png" width="353">
-</p>
+- https://sebastiendumont.com
+- GitHub: https://github.com/seb86
+- Twitter: https://twitter.com/sebd86
