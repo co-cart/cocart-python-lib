@@ -1,7 +1,7 @@
 CoCart API - Python Client
 ===============================
 
-> 🍴 Forked from WooCommerce Python Library and modified to support CoCart REST API instead.
+> Forked from WooCommerce Python Library and modified to support CoCart REST API instead.
 
 A Python wrapper for the CoCart REST API. Easily interact with the CoCart REST API using this library.
 
@@ -11,7 +11,7 @@ A Python wrapper for the CoCart REST API. Easily interact with the CoCart REST A
 .. image:: https://img.shields.io/pypi/v/cocart.svg
     :target: https://pypi.python.org/pypi/CoCart
 
-> ⚠️This library will **NOT** support the **LEGACY API** of CoCart.
+> This library will **NOT** support the **LEGACY API** of CoCart.
 
 Installation
 ------------
