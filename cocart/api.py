@@ -36,7 +36,7 @@ class CoCartAPI(object):
         self.query_string_auth = kwargs.get("query_string_auth", False)
         self.userAgent = kwargs.get("user_agent", self.__defaultUserAgent())
 
-    def __defaultUserAgent(self):
+    def __defaultUserAgent():
         """ Using default User Agent """
         return f"CoCart API {__version__}"
 
