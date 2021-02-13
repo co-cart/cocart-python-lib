@@ -105,7 +105,7 @@ class CoCartTestCase(unittest.TestCase):
 
         with HTTMock(cocart_test_mock):
             # call requests
-            status = self.api.post("products", {}).status_code
+            status = self.api.post("add-item", {}).status_code
         self.assertEqual(status, 201)
 
     def test_delete(self):
