@@ -108,19 +108,6 @@ class CoCartTestCase(unittest.TestCase):
             status = self.api.post("products", {}).status_code
         self.assertEqual(status, 201)
 
-    def test_put(self):
-        """ Test PUT requests """
-        @all_requests
-        def cocart_test_mock(*args, **kwargs):
-            """ URL Mock """
-            return {'status_code': 200,
-                    'content': 'OK'}
-
-        with HTTMock(cocart_test_mock):
-            # call requests
-            status = self.api.put("products", {}).status_code
-        self.assertEqual(status, 200)
-
     def test_delete(self):
         """ Test DELETE requests """
         @all_requests
