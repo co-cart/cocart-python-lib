@@ -118,7 +118,7 @@ class CoCartTestCase(unittest.TestCase):
 
         with HTTMock(cocart_test_mock):
             # call requests
-            status = self.api.delete("products").status_code
+            status = self.api.delete("item").status_code
         self.assertEqual(status, 200)
 
     def test_oauth_sorted_params(self):
